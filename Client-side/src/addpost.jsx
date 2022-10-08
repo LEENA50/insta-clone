@@ -31,9 +31,9 @@ const Post = () => {
         const config = {
             headers: { 'content-type': 'multipart/form-data' }
         }
-            axios.post("https://intsagram-by-abhishek.herokuapp.com/newpost", formData, config)
+            axios.post("https://insta-end.herokuapp.com/newpost", formData, config)
                 .then (res => console.log(res));
-                // navigate("/post")
+                 navigate("/post")
         
     }
     return (

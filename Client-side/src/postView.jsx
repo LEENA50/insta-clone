@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function PostView() {
     const[postData,setPostData] = useState([]);
     useEffect(()=>{
-        fetch("https://intsagram-by-abhishek.herokuapp.com/postview").then((data)=>
+        fetch("https://insta-end.herokuapp.com/postview").then((data)=>
         {
             return data.json();
         }).then((data)=>{
@@ -14,7 +14,7 @@ export default function PostView() {
             console.log(data)
         })
     },[])
-    const IMG_URL = "https://intsagram-by-abhishek.herokuapp.com";
+    const IMG_URL = "https://insta-end.herokuapp.com";
   return (
     
     <div className='main-div'>
